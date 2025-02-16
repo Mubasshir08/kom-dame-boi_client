@@ -2,7 +2,7 @@ import React from 'react'
 
 const Feed = () => {
   return (
-    <div>Feed</div>
+    <div className='container px-3'>Feed</div>
   )
 }
 
