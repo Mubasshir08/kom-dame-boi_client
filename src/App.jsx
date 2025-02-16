@@ -7,7 +7,7 @@ import Navbar from './shared/navbar/Navbar';
 function App() {
   return (
     <div>
-      <Navbar />
+      <Navbar /> {/* shared component */}
       <RouterProvider router={Route}/>
     </div>
   )
