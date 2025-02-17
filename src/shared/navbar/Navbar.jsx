@@ -1,4 +1,5 @@
 import React from 'react';
+import { IoBook } from "react-icons/io5";
 import './Navbar.css';
 
 const Navbar = () => {
@@ -14,7 +15,10 @@ const Navbar = () => {
 
       <button className='btn btn-square text-2xl'>+</button>
 
-      <div className="navbar-end">
+      <div className="navbar-end gap-x-3 md:gap-x-4">
+        <button className='btn btn-ghost btn-neutral'>
+          <IoBook />
+        </button>
         <button className="btn btn-ghost btn-circle">
           <div className="indicator">
             <svg
