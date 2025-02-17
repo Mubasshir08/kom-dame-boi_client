@@ -1,16 +1,21 @@
 import React from 'react';
 import { IoBook } from "react-icons/io5";
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div className="navbar px-3 bg-base-100">
+      
       <div className="navbar-start">
+        <Link to = '/reader'>
+        
         <div className="avatar cursor-pointer">
           <div className="w-12 rounded-full">
             <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
           </div>
         </div>
+        </Link>
       </div>
 
       <button className='btn btn-square text-2xl'>+</button>

@@ -3,12 +3,12 @@ import { FaBookmark } from "react-icons/fa";
 
 const Card = () => {
   return (
-    <div className="card card-compact bg-base-100 lg:w-[40rem] shadow-xl mx-auto">
-  <figure>
+    <div className="card card-compact bg-base-100 lg:w-[40rem] shadow-xl mx-auto mb-5">
+  <figure className='h-80'>
     <img
       src="https://images.unsplash.com/photo-1577627444534-b38e16c9d796?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       alt="book" 
-      className='h-96 w-full'/>
+      className=''/>
       <FaBookmark className='absolute top-3 right-4 text-xl text-primary-content'/>
   </figure>
   <div className="card-body">
