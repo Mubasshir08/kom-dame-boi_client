@@ -11,9 +11,9 @@ const Profile = () => {
                         className='w-full'/>
                 </figure>
                 <div className="card-body i">
-                    <h2 className="card-title">Sofia</h2>
-                    <p>What's up guys :)</p>
-                    <div className='flex flex-row mb-10'>
+                    <h2 className="font-bold text-lg text-center">Sofia</h2>
+                    <p className='text-center'>What's up guys 😇</p>
+                    <div className='flex flex-row mb-10 mx-auto md:ml-8'>
                         <div className='flex flex-col items-center'>
                             <h3>55</h3>
                             <h3>Sell</h3>

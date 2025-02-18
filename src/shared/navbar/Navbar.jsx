@@ -6,21 +6,27 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div className="navbar px-3 bg-base-100">
-      
+
       <div className="navbar-start">
-        <Link to = '/reader'>
-        
-        <div className="avatar cursor-pointer">
-          <div className="w-12 rounded-full">
-            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+        <Link to='/reader'>
+
+          <div className="avatar cursor-pointer">
+            <div className="w-12 rounded-full">
+              <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            </div>
           </div>
-        </div>
+        </Link>
+      </div>
+      <div className='navbar-center'>
+        <Link to='/'>
+          <button className='btn btn-neutral'>
+            B
+          </button>
         </Link>
       </div>
 
-      <button className='btn btn-square text-2xl'>+</button>
-
       <div className="navbar-end gap-x-3 md:gap-x-4">
+        <button className='btn btn-square text-2xl'>+</button>
         <button className='btn btn-ghost btn-neutral'>
           <IoBook />
         </button>
