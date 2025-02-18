@@ -24,7 +24,7 @@ const Card = () => {
           </div>
           <h3>posted by msr0012</h3>
         </div>
-      <button className="btn btn-primary hover:btn-error">Buy Now</button>
+      <button className="btn btn-primary hover:btn-error hover:text-primary-content">Buy Now</button>
     </div>
   </div>
 </div>

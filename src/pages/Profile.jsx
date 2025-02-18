@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaRegEdit } from 'react-icons/fa'
 
 const Profile = () => {
     return (
@@ -10,8 +11,13 @@ const Profile = () => {
                         alt="Reader" 
                         className='w-full'/>
                 </figure>
-                <div className="card-body i">
-                    <h2 className="font-bold text-lg text-center">Sofia</h2>
+                <div className="card-body">
+                    <div className='relative flex items-center mx-auto'>
+                    <h2 className="font-bold text-lg">Sofia</h2>
+                    <button className='absolute left-26 md:left-30 hover:text-primary'>
+                        <FaRegEdit className=''/>
+                    </button>
+                    </div>
                     <p className='text-center'>What's up guys 😇</p>
                     <div className='flex flex-row mb-10 mx-auto md:ml-8'>
                         <div className='flex flex-col items-center'>
