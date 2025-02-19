@@ -155,14 +155,14 @@ const Signup = () => {
             </div>
           </div>
 
-          <div className="w-[63%] md:w-[40%] mb-4 md:mb-2 flex justify-between">
+          <div className="w-[63%] md:w-[40%] mb-3 md:mb-2 flex justify-between">
             <h3 className="text-primary">Already have an account?</h3>
             <Link to="/login" className="text-blue-500">Sign In</Link>
           </div>
 
           <div className="flex items-center justify-between">
             <button
-              className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="w-full btn btn-md btn-neutral text-white font-bold rounded focus:outline-none focus:shadow-outline"
               type="submit"
             >
               Sign Up
