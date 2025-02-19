@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div className="navbar px-3 bg-base-100">
+    <div className="navbar px-3 bg-base-100 sticky top-0 z-10 border-b-2 border-b-base-content/10 mb-5 pb-3">
 
       <div className="navbar-start">
         <Link to='/reader'>

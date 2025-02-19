@@ -4,6 +4,7 @@ import Feed from "../pages/Feed";
 import Profile from "../pages/Profile";
 import Layout from "../layout/Layout";
 import Signup from "../auth/Signup";
+import Login from "../auth/Login";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
     {
         path: "/signup",
         element: <Signup />
+    },
+    {
+        path: "/login",
+        element: <Login />
     }
 ])
 

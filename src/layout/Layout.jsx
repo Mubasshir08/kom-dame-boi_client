@@ -6,7 +6,7 @@ const Layout = () => {
   return (
     <div className='container'>
     <Navbar /> {/* Now Link will have context */}
-    <div className='divider -mt-1 '></div>
+    {/* <div className='divider -mt-1 z-20'></div> */}
     <Outlet /> {/* Renders the child route */}
   </div>
   )
