@@ -2,8 +2,15 @@ import React from 'react';
 import { IoBook } from "react-icons/io5";
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-
+import { useDispatch, useSelector } from 'react-redux';
+import { setPopup } from '../../redux/PostSlice';
 const Navbar = () => {
+  const dispatch = useDispatch();
+  const {popup} = useSelector((state) => state.post);
+  // console.log(popup)
+  const popupHandler = () => {
+    dispatch(setPopup(!popup));
+  }
   return (
     <div className="navbar px-3 bg-base-100 sticky top-0 z-10 border-b-2 border-b-base-content/10 mb-5 pb-3">
 
@@ -26,7 +33,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end gap-x-3 md:gap-x-4">
-        <button className='btn btn-square text-2xl'>+</button>
+        <button className='btn btn-square text-2xl' onClick={popupHandler}>+</button>
         <button className='btn btn-ghost btn-neutral'>
           <IoBook />
         </button>

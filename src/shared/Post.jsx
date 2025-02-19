@@ -5,7 +5,7 @@ const Post = () => {
     <div className='w-1/2 absolute bg-base-100 border border-neutral z-10 rounded-md translate-x-77'>
       <form action="" className='px-3'>
         <h3 className='text-center text-lg'>Post</h3>
-        <select className="border-none focus:outline-none bg-primary text-primary-content rounded-md ml-10 mt-5 p-1">
+        <select className="focus:outline-none border-primary rounded-md ml-10 mt-5 p-1">
           <option defaultChecked = {true}>Sell</option>
           <option>Regular</option>
         </select>
