@@ -5,13 +5,15 @@ import Profile from "../pages/Profile";
 import Layout from "../layout/Layout";
 import Signup from "../auth/Signup";
 import Login from "../auth/Login";
+import Notification from "../pages/Notification";
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Layout />, // Layout wraps all routes
         children: [
             { path: "/", element: <Feed /> },
-            { path: "/reader", element: <Profile /> }
+            { path: "/reader", element: <Profile /> },
+            { path: "/reader/notification", element: <Notification /> },
         ]
     },
     {

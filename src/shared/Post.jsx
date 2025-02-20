@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setPopup } from '../redux/PostSlice';
 
 const Post = () => {
+    const [IsPopUpShow, setIsPopUpShow] = useState(false);
   const dispatch = useDispatch();
     const {popup} = useSelector((state) => state.post);
     // console.log(popup)
@@ -10,8 +11,11 @@ const Post = () => {
       e.preventDefault();
       dispatch(setPopup(!popup));
     }
+    useEffect(() => {
+      setIsPopUpShow(popup);
+    },[popup])
   return (
-    <div className='w-1/2 absolute bg-base-100 border border-neutral z-10 rounded-md translate-x-77'>
+    <div className={`${IsPopUpShow ? "block" : "hidden"} w-1/2 absolute bg-base-100 border border-neutral z-10 rounded-md translate-x-77`}>
       <form action="" className='px-3 relative'>
         <h3 className='text-center text-lg'>Post</h3>
         <button className="btn btn-neutral btn-circle absolute top-2 right-3 " onClick={popupHandler}>x</button>

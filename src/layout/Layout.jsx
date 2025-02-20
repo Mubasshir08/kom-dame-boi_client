@@ -1,12 +1,14 @@
 import React from 'react'
 import Navbar from '../shared/navbar/Navbar'
 import { Outlet } from 'react-router-dom'
+import Post from '../shared/Post'
+
 
 const Layout = () => {
   return (
     <div className='container'>
     <Navbar /> {/* Now Link will have context */}
-    {/* <div className='divider -mt-1 z-20'></div> */}
+    <Post />
     <Outlet /> {/* Renders the child route */}
   </div>
   )
