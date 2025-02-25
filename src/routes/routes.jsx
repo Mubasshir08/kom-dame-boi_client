@@ -9,6 +9,7 @@ import Notification from "../pages/Notification";
 import Settings from "../pages/Settings";
 import General from "../pages/General";
 import Appearance from "../pages/Appearance";
+import Security from "../pages/Security";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
             { path: "/reader/setting", element: <Settings />, children:[
                 { path: "/reader/setting/general", element: <General /> },
                 { path: "/reader/setting/theme", element: <Appearance /> },
+                { path: "/reader/setting/security", element: <Security /> },
             ] },
         ]
     },

@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { setTheme } from '../redux/ThemeSlice';
 
 const Appearance = () => {
-  const [islight, setIsLight] = useState(true);
+  const dispatch = useDispatch();
+  const {islight} = useSelector(state => state.theme)
+  // const [islight, setIsLight] = useState(true);
   const handleThemeChange = () => {
-    setIsLight(!islight);
+    dispatch(setTheme(!islight));
   }
   return (
     <div className='flex'>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaRegEdit } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const ProfileCard = () => {
   return (
@@ -13,8 +14,10 @@ const ProfileCard = () => {
                 <div className="card-body">
                     <div className='relative flex items-center mx-auto'>
                     <h2 className="font-bold text-lg">Sofia</h2>
-                    <button className='absolute left-26 md:left-30 hover:text-primary'>
+                    <button className='absolute left-26 md:left-30 hover:text-primary hover:cursor-pointer'>
+                     <Link to="/reader/setting">
                         <FaRegEdit className=''/>
+                     </Link> 
                     </button>
                     </div>
                     <p className='text-center'>What's up guys 😇</p>

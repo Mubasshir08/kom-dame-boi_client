@@ -14,10 +14,7 @@ const General = () => {
         <h3 className='pb-2'>User Name</h3>
         <input type="text" value={userName} className='input input-primary focus:outline-none' onChange={(e) => setUserName(e.target.value)} />
       </div>
-      <div className='flex flex-col'>
-        <h3 className='pb-2'>Password</h3>
-        <input type="text" value={userName} className='input input-primary focus:outline-none' onChange={(e) => setUserName(e.target.value)} />
-      </div>
+     
     </div>
   )
 }
