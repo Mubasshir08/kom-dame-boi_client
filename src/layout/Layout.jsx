@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../shared/navbar/Navbar'
 import { Outlet } from 'react-router-dom'
-import Post from '../shared/Post'
+import Post from '../shared/popup/Post'
 
 
 const Layout = () => {
