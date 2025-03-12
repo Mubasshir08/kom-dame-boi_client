@@ -17,7 +17,7 @@ const Profile = () => {
 
             {/* menu bar */}
             <MenuBar/>
-
+            <div className="container w-1/2 mx-auto divider"></div>
         </div>
     )
 }
