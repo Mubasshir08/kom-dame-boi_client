@@ -10,13 +10,13 @@ const Appearance = () => {
     dispatch(setTheme(!islight));
   }
   return (
-    <div className='flex'>
+    <div className='flex gap-x-2'>
       <h3>Appearance:</h3>
       <label htmlFor="light">light
-        <input type="checkbox" className="checkbox theme-controller" id='light' value={"caramellatte"} checked={islight} onClick={handleThemeChange}/>
+        <input type="checkbox" className="checkbox theme-controller ml-1" id='light' value={"caramellatte"} checked={islight} onClick={handleThemeChange}/>
       </label>
       <label htmlFor="dark">dark
-        <input type="checkbox" className="checkbox theme-controller" id='dark' value={"black"} checked={!islight} onClick={handleThemeChange}/>
+        <input type="checkbox" className="checkbox theme-controller ml-1" id='dark' value={"black"} checked={!islight} onClick={handleThemeChange}/>
       </label>
     </div>
   )
